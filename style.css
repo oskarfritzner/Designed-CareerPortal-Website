@@ -1,0 +1,464 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*:hover {
+    outline: none;
+}
+
+:root {
+    --dreamland-brown: #82674b;
+    --dreamland-black: #000000;
+    --dreamland-white: #FFFFFF;
+    --dreamland-blue: #0024a4;
+    --dreamland-important: rgba(130,41,0,0.09);
+    --dreamland-hover: rgba(255,255,255,0.67);
+    --reel-news-white: #FFFFFF;
+    --reel-news-black: #000000;
+    --reel-news-accent: #312DA1;
+    --reel-news-light-grey: #919191;
+    --reel-news-black-transparent: rgba(0,0,0,0.85);
+    --reel-news-red: #ff0000;
+    --reel-news-dark-gray: #313131;
+    --reel-news-transparent: rgba(255, 255, 255, 0.55);
+    --metro-blue: #2579E8;
+    --metro-blue-acc: #509CFF;
+    --metro-red: #E83030;
+    --metro-exclusive: #1DCA95;
+    --news-hub-dark-grey: #333;
+    --news-hub-white: #FFFFFF;
+    --news-hub-accent: #d61935;
+    --news-hub-light-grey: #cccccc;
+    --news-hub-black: #0f0f0f;
+    --news-hub-accent-hover: #d6374f;
+    --news-hub-medium-gray: #999999;
+}
+
+:root, ::before, ::after {
+    --mec-color-skin: #a81010;
+    --mec-color-skin-rgba-1: rgba(168,16,16,.25);
+    --mec-color-skin-rgba-2: rgba(168,16,16,.5);
+    --mec-color-skin-rgba-3: rgba(168,16,16,.75);
+    --mec-color-skin-rgba-4: rgba(168,16,16,.11);
+    --mec-container-normal-width: 1196px;
+    --mec-container-large-width: 1690px;
+    --mec-content-color: #000000;
+    --mec-fes-main-color: #40d9f1;
+    --mec-fes-main-color-rgba-1: rgba(64, 217, 241, 0.12);
+    --mec-fes-main-color-rgba-2: rgba(64, 217, 241, 0.23);
+    --mec-fes-main-color-rgba-3: rgba(64, 217, 241, 0.03);
+    --mec-fes-main-color-rgba-4: rgba(64, 217, 241, 0.3);
+    --mec-fes-main-color-rgba-5: rgb(64 217 241 / 7%);
+    --mec-fes-main-color-rgba-6: rgba(64, 217, 241, 0.2);
+    --mec-fluent-main-color: #ade7ff;
+    --mec-fluent-main-color-rgba-1: rgba(173, 231, 255, 0.3);
+    --mec-fluent-main-color-rgba-2: rgba(173, 231, 255, 0.8);
+    --mec-fluent-main-color-rgba-3: rgba(173, 231, 255, 0.1);
+    --mec-fluent-main-color-rgba-4: rgba(173, 231, 255, 0.2);
+    --mec-fluent-main-color-rgba-5: rgba(173, 231, 255, 0.7);
+    --mec-fluent-main-color-rgba-6: rgba(173, 231, 255, 0.7);
+    --mec-fluent-bold-color: #00acf8;
+    --mec-fluent-bg-hover-color: #ebf9ff;
+    --mec-fluent-bg-color: #dd3333;
+    --mec-fluent-second-bg-color: #d6eef9;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    background-color: white;
+    margin: 0px auto;
+    width: 80vw;
+    padding-top: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-item {
+    list-style-type: none;
+    font-size: 1.1rem;
+    line-height: 64px;
+    font-weight: 400;
+    padding: 0 25px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-link:hover {
+    color: var(--mec-fluent-bold-color);
+}
+
+.k-btn {
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 36px;
+    pointer-events: auto;
+    background-color: #d6374f;
+}
+
+.k-btn-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.k-btn-link span {
+    color: white;
+}
+
+
+
+#k-btn:hover {
+    background-color: #d6374f46;
+    cursor: pointer;
+}
+
+img, video, svg {
+    max-width: 100%;
+}
+
+.hero-section {
+    background-color: rgb(245, 245, 245);
+    position: relative;
+    margin: 0 auto 50px auto;
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.hero-section .text-content {
+    width: 25%;
+    height: fit-content;
+    margin: 20px 10px;
+}
+
+.text-content h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 16px;
+}
+
+.hero-content-btns {
+    height: auto;
+}
+
+.hero-content-btns div {
+    margin-top: 10px;
+}
+
+.hero-section .karriere-senter-gruppebildet {
+    margin-top: 50px;
+    width: 20vw;
+    height: 65vh;
+
+}
+
+.student-photo-div {
+    margin-top: 50px;
+    height: 65vh;
+    
+    flex-grow: 1;
+    background-image: url(https://karriere.kristiania.no/wp-content/uploads/2022/07/Studenter.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.boxes {
+    height: 200px;
+    background-color: red;
+    width: 80vw;
+}
+
+/*Line seperating sections*/
+.line-with-whitespace {
+    height: 100px;
+    margin: 0 auto;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*Nyeste stillinger Section*/
+
+
+#nyeste-stillinger {
+    width: 70vw;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+ h2 {
+    font-size: 2.2rem;
+}
+
+#nyeste-stillinger-display {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.nyeste-stillinger-element {
+    list-style-type: none;
+    width: 100%;
+    min-height: 150px;
+    border: 1px solid rgb(180, 180, 180);
+}
+
+.stilling-card {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.stilling-card-logo-figure {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stilling-card-text {
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 5px;
+}
+
+.stilling-card-main-info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px 5px;
+}
+
+.stilling-card-main-info h3 {
+    color: rgb(75, 75, 75);
+    font-size: 1.6rem;
+}
+
+.stilling-card-main-info ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.stilling-card-main-info ul > li:first-child {
+    border-right: 1px solid black;
+    padding-right: 5px;
+}
+
+.stilling-card-position-info {
+    height: fit-content;
+    width: auto;
+    display: flex;
+    align-items: center;
+    background-color: lightgray;
+}
+
+.stilling-card-position-info a {
+    font-size: 1rem;
+    padding: 4px 15px;
+}
+
+.k-btn-sections {
+    margin-top: 50px;
+    font-size: 1.2rem;
+    width: fit-content;
+}
+
+/*Arrangementer Section*/
+
+#arrangementer-section {
+    margin: 0 auto;
+    width: 70vw;
+}
+
+.arrangementer-container {
+    margin: 50px 0;
+}
+
+/*Nyheter og oversikt section*/
+.nyheter-oversikt-section {
+    margin: 50px auto 0 auto;
+    width: 70vw;
+}
+
+.nyheter-oversikt-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.nyhet-card {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.nyhet-card-img {
+    width: 50%;
+    height: 100%;
+    border: 1px solid black;
+    background-image: url(https://karriere.kristiania.no/wp-content/uploads/2022/07/Studenter.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.nyhet-card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+/*Artikler fra kunnskapsmagasin seksjon*/
+.artikler-kunnskapsmagasin {
+    margin: 0 auto;
+    width: 70vw;
+}
+
+.artikler-kunnskapsmagasin p {
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.artikkel  a {
+    text-decoration: none;
+}
+
+.artikler-grid {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.artikkel-1 {
+    grid-column: span 1;
+}
+
+.artikkel-2 {
+    grid-column: 2 / span 2;
+}
+
+.artikkel-3 {
+    grid-column: 4;
+}
+
+.artikkel {
+    display: flex;
+    flex-direction: column;
+}
+
+.artikkel h3 {
+    font-size: 2em;
+    color: black;
+}
+
+.artikkel p {
+    line-height: 1.5;
+}
+
+.k-btn-artikkler {
+    width: 20%;
+}
+
+.artikkel:hover h3 {
+    color: var(--mec-fluent-bold-color);
+    transition: 0.3s ease-in-out;
+
+}
+
+.samarbeid-section {
+    margin: 0 auto;
+    width: 70vw;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.samarbeid-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    width: 80%;
+}
+
+.samarbeid-text h2 {
+    font-size: 1.8rem;
+}
+
+.k-btn-samarbeid {
+}
+
+
+footer {
+    background-color: var(--news-hub-dark-grey);
+    color: white;
+    margin-top: 50px;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > div {
+    margin: 0 auto;
+    width: 70vw;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+
